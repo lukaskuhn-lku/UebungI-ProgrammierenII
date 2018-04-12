@@ -112,7 +112,7 @@ checkeBedroht x y farbe feld counter richtung = if feld x y /= farbe && feld x y
         else False
                                         
 
--- = -
+-- = - Test 
 -- = -
 -- = ---------------------------------------------------------------------------
 -- = -
