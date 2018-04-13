@@ -112,15 +112,19 @@ checkeBedroht x y farbe feld counter richtung = if feld x y /= farbe && feld x y
         else False
                                         
 
--- = -
+-- = - Test 
 -- = -
 -- = ---------------------------------------------------------------------------
 -- = -
 -- = - Aufgabe c)
 -- = -
 
-bedroht = undefined -- zu implementieren!
-
+bedroht x y farbe feld = if bedrohtRichtung x y farbe (0) feld then True 
+                         else if bedrohtRichtung x y farbe (1) feld then True
+                         else if bedrohtRichtung x y farbe (2) feld then True
+                         else if bedrohtRichtung x y farbe (3) feld then True
+                              else False
+                              
 -- = -
 -- = -
 -- = ---------------------------------------------------------------------------
