@@ -2,6 +2,7 @@
 -- Grundlagen der Programmierung 2 
 -- Aufgabenblatt 1
 -- Loesungsvorschl"age
+-- by Lukas Kuhn
 -- ============================================================================
 
 import Data.List
@@ -112,7 +113,7 @@ checkeBedroht x y farbe feld counter richtung = if feld x y /= farbe && feld x y
         else False
                                         
 
--- = - Test 
+-- = -  
 -- = -
 -- = ---------------------------------------------------------------------------
 -- = -
@@ -124,7 +125,7 @@ bedroht x y farbe feld = if bedrohtRichtung x y farbe (0) feld then True
                          else if bedrohtRichtung x y farbe (2) feld then True
                          else if bedrohtRichtung x y farbe (3) feld then True
                               else False
-                              
+
 -- = -
 -- = -
 -- = ---------------------------------------------------------------------------
@@ -135,7 +136,7 @@ bedroht x y farbe feld = if bedrohtRichtung x y farbe (0) feld then True
 istZugGueltig = undefined -- zu implementieren!
 
 -- = -
--- = -
+-- = - 
 -- = ---------------------------------------------------------------------------
 -- = -
 -- = - Aufgabe e)
