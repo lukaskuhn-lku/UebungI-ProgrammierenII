@@ -133,7 +133,11 @@ bedroht x y farbe feld = if bedrohtRichtung x y farbe (0) feld then True
 -- = - Aufgabe d)
 -- = -
 
-istZugGueltig = undefined -- zu implementieren!
+istZugGueltig xAlt yAlt xNeu yNeu feld =  if bedroht xNeu yNeu (feld xAlt yAlt) feld then False
+                                          else if not istZugDiagonal xAlt yAlt xNeu yNeu then False
+                                          else if xNeu <= 0 || xNeu > 5 || yNeu <= 0 || yNeu > 5 then False
+                                          else feld xNeu yNeu = (feld xAlt yAlt) 
+                                               feld xAlt yAlt = ' '
 
 -- = -
 -- = - 
